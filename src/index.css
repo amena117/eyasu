@@ -1,0 +1,20 @@
+/* 1. Import fonts FIRST (before any Tailwind) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* 2. Then Tailwind layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 3. Your custom styles AFTER Tailwind */
+body {
+  font-family: 'Playfair Display', serif;
+}
+
+img {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+img:hover {
+  transform: scale(1.03);
+}
