@@ -127,12 +127,13 @@ function App() {
               →
             </button>
 
+            {/* Smaller download button at bottom */}
             <a
               href={selectedImage}
               download
-              className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-white text-zinc-900 px-10 py-4 rounded-full font-medium flex items-center gap-3 shadow-xl hover:bg-sky-50 transition-all"
+              className="fixed bottom-4 left-1/2 -translate-x-1/2 bg-white text-zinc-900 px-6 py-2.5 rounded-full font-medium flex items-center gap-2 shadow-lg hover:bg-sky-50 transition-all text-sm sm:text-base z-[100]"
             >
-              ⬇️ Download this memory
+              ⬇️ Download
             </a>
           </div>
         </div>
